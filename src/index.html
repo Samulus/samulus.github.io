@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+
+<body class="flex flex-column v-top">
+
+<nav class="flex flex-row ma3 ma4-ns flex-wrap jutify-center justify-end-ns">
+
+    <div class="flex flex-row justify-center justify-start-ns flex-wrap w-80-ns w-100">
+        <div class="f2 w-100">Samuel Vargas</div>
+        <div class="f3 w-100 indent-ns subtitle">Software / Graphics Developer</div>
+    </div>
+
+    <div class="flex justify-center justify-end-ns flex-row pt0-ns pt3 left-0-ns w-20-ns w-100">
+        <a href="https://github.com/samulus">
+            <span><i class="fab mr3 items-stretch tc tl-ns hot-pink fa-3x fa-github"></i></span>
+        </a>
+        <a href="resume/samuel_vargas_resume_2019.pdf" target="_blank">
+            <span><i class="fas mr3 items-stretch flex tc tl-ns purple fa-3x fa-file-pdf"></i></span>
+        </a>
+    </div>
+</nav>
+
+<div class="flex flex-row flex-wrap jutify-center justify-start w-100">
+
+    <!-- LHS -->
+    <div class="flex flex-column w-100 w-50-ns">
+        <!-- Projects -->
+        <div class="flex flex-column">
+            <h2 class="ml2 ml4-ns b"><i class="fas green fa-laptop"></i> Projects</h2>
+
+            <div class="flex flex-row flex-wrap">
+                <article class="flex ml2 ml5-ns">
+                    <div class="flex-auto pa2 ph3-ns pb3-ns">
+                        <div class="flex-auto dt w-100 mt1">
+                            <div class="dtc">
+                                <h1 class="f5 f4-ns mv0">raytracer (C++ / Lua / ImGUI)</h1>
+                            </div>
+                        </div>
+                        <img src="img/raytracer_g.png" alt="">
+                        <p class="f6 tj lh-copy measure mt2 mid-gray">
+                            raytracer is a (work in progress) raytracer implementation being written in C++.
+                            The ray tracing engine supports custom scenes the end user can create via Lua scripts,
+                            hot-swappable support for multiple light transport algorithms, and multiple debugging
+                            utilities via an IMGUI interface.
+                        </p>
+                    </div>
+                </article>
+                <article class="flex ml2 ml5-ns">
+                    <div class="flex-auto pa2 ph3-ns pb3-ns">
+                        <div class="flex-auto dt w-100 mt1">
+                            <div class="dtc">
+                                <h1 class="f5 f4-ns mv0">Tetromino (Unity / C#)</h1>
+                            </div>
+                        </div>
+                        <img src="img/tetromino_g.png" alt="">
+                        <p class="f6 tj lh-copy measure mt2 mid-gray">
+                            Tetromino is a game I created for my CPI 211 (Intro to Game
+                            Development with Unity) at Arizona State Universiy. It's a spatial /
+                            logic puzzle game in which the player must manipulate the environment
+                            and use various mechanics to reach the exit.
+                        </p>
+                    </div>
+                </article>
+                <article class="flex ml2 ml5-ns">
+                    <div class="flex-auto pa2 ph3-ns pb3-ns">
+                        <div class="flex-auto dt w-100 mt1">
+                            <div class="dtc">
+                                <h1 class="f5 f4-ns mv0">Toycaster (Nim / OpenGL)</h1>
+                            </div>
+                        </div>
+                        <img src="img/toycaster_g.png" alt="">
+                        <p class="f6 tj lh-copy measure mt2 mid-gray">
+                            Toycaster is an OpenGL accelerated ray casting engine.
+                            The parallelzation provided by the GPU allows for very high framerates
+                            even on modest hardware and high resolutions.
+                        </p>
+                    </div>
+                </article>
+                <article class="flex ml2 ml5-ns">
+                    <div class="flex-auto pa2 ph3-ns pb3-ns">
+                        <div class="flex-auto dt w-100 mt1">
+                            <div class="dtc">
+                                <h1 class="f5 f4-ns mv0">glsl_sandbox (C++ / Lua / IMGui) </h1>
+                            </div>
+                        </div>
+                        <img src="img/glsl_sandbox_g.png" alt="">
+                        <p class="f6 lh-copy measure mt2 mid-gray">
+                            glsl_sandbox is a small interactive and scriptable (Lua) C++ application designed to
+                            demonstrate the use of linear algebra in computer graphics for controlling
+                            the position and view of objects in a given scene.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- RHS -->
+    <div class="flex flex-column w-100 w-50-ns">
+
+        <div class="flex flex-column pl1 pl2-m pl4-l">
+            <h2 class="b"><i class="fas red fa-user-circle"></i> Skills</h2>
+            <table class="flex justify-start ml-5 w-100 center">
+                <tbody>
+                <tr>
+                    <td class="table-key">Languages:</td>
+                    <td class="table-value"> C, C++, D, Python, Java, Lua, HTML5 / JS, Lua, Nim</td>
+                </tr>
+                <tr>
+                    <td class="table-key">APIs:</td>
+                    <td class="table-value">OpenGL, WebGL, Jenkins, Docker</td>
+                </tr>
+                <tr>
+                    <td class="table-key">Software:</td>
+                    <td class="table-value">Blender, Unity, Arch Linux / Debian, Vim, Git, IDEA, Maven</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Videos -->
+            <div class="flex flex-column">
+                <h2 class="b"><i class="fas blue fa-video"></i> Videos</h2>
+                <iframe width="500" height="300" src="https://www.youtube-nocookie.com/embed/cTdNo9LA5hI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- WebGL Demo goes here -->
+            <!--
+            <div class="flex flex-column bg-washed-blue wg-100 w-50-ns">
+                <h2 class="b"><i class="fas gold fa-question-circle"></i> Demo</h2>
+            </div>
+            -->
+        </div>
+    </div>
+</div>
+</body>
+</html>
