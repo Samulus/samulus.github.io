@@ -1,8 +1,17 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require('copy-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
 
 module.exports = {
+    devtool: false,
+    optimization: {
+        minimizer: [new UglifyJsPlugin({
+            test: /\.js(\?.*)?$/i
+        })],
+    },
+
     module: {
         rules: [
             {
@@ -41,10 +50,11 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif)$/i,
-                loader: 'file-loader',
+                loader: 'url-loader',
                 options: {
                     name: '[name].[ext]',
                     outputPath: 'img',
+                    limit: 10 * 1024
                 }
             }
         ]
@@ -61,7 +71,7 @@ module.exports = {
             inject: true,
             minify: {
                 removeComments: true,
-                collapseWhitespace: false
+                collapseWhitespace: true
             }
         }),
 
